@@ -1,0 +1,39 @@
+version: '2'
+services:
+    db:
+        image: postgres:13
+        restart: always
+        environment:
+            POSTGRES_USER: postgres
+            POSTGRES_PASSWORD: root
+            POSTGRES_DB: database_development
+        ports:
+            - 5432:5432
+        expose:
+            - 5432
+
+    rails_api_boilerplate:
+        build: .
+        volumes:
+            - ".:/opt/RAILS_API_BOILERPLATE"
+        ports:
+            - 3000:3000
+        depends_on:
+            - db
+            - redis
+        environment:
+            RAILS_API_BOILERPLATE_DB_NAME: database_development
+            RAILS_API_BOILERPLATE_DB_HOST: db
+            RAILS_API_BOILERPLATE_DB_USER: postgres
+            RAILS_API_BOILERPLATE_DB_PASSWORD: root
+            REDIS_URL: redis://redis:6379/
+    sidekiq:
+        build: .
+        command: bundle exec sidekiq
+        depends_on:
+            - db
+            - redis
+        environment:
+            REDIS_URL: redis://redis:6379/
+    redis:
+        image: redis
