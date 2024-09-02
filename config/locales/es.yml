@@ -1,150 +1,124 @@
-# encoding: utf-8
 es:
-  faker:
-    address:
-      city_prefix: [Parla, Telde, Baracaldo, San Fernando, Torrevieja, Lugo, Santiago de Compostela, Gerona, Cáceres, Lorca, Coslada, Talavera de la Reina, El Puerto de Santa María, Cornellá de Llobregat, Avilés, Palencia, Gecho, Orihuela, Pontevedra, Pozuelo de Alarcón, Toledo, El Ejido, Guadalajara, Gandía, Ceuta, Ferrol, Chiclana de la Frontera, Manresa, Roquetas de Mar, Ciudad Real, Rubí, Benidorm, San Sebastían de los Reyes, Ponferrada, Zamora, Alcalá de Guadaira, Fuengirola, Mijas, Sanlúcar de Barrameda, La Línea de la Concepción, Majadahonda, Sagunto, El Prat de LLobregat, Viladecans, Linares, Alcoy, Irún, Estepona, Torremolinos, Rivas-Vaciamadrid, Molina de Segura, Paterna, Granollers, Santa Lucía de Tirajana, Motril, Cerdañola del Vallés, Arrecife, Segovia, Torrelavega, Elda, Mérida, Ávila, Valdemoro, Cuenta, Collado Villalba, Benalmádena, Mollet del Vallés, Puertollano, Madrid, Barcelona, Valencia, Sevilla, Zaragoza, Málaga, Murcia, Palma de Mallorca, Las Palmas de Gran Canaria, Bilbao, Córdoba, Alicante, Valladolid, Vigo, Gijón, Hospitalet de LLobregat, La Coruña, Granada, Vitoria, Elche, Santa Cruz de Tenerife, Oviedo, Badalona, Cartagena, Móstoles, Jerez de la Frontera, Tarrasa, Sabadell, Alcalá de Henares, Pamplona, Fuenlabrada, Almería, San Sebastián, Leganés, Santander, Burgos, Castellón de la Plana, Alcorcón, Albacete, Getafe, Salamanca, Huelva, Logroño, Badajoz, San Cristróbal de la Laguna, León, Tarragona, Cádiz, Lérida, Marbella, Mataró, Dos Hermanas, Santa Coloma de Gramanet, Jaén, Algeciras, Torrejón de Ardoz, Orense, Alcobendas, Reus, Calahorra, Inca]
-      country: [Afganistán, Albania, Argelia, Andorra, Angola, Argentina, Armenia, Aruba, Australia, Austria, Azerbayán, Bahamas, Barein, Bangladesh, Barbados, Bielorusia, Bélgica, Belice, Bermuda, Bután, Bolivia, Bosnia Herzegovina, Botswana, Brasil, Bulgaria, Burkina Faso, Burundi, Camboya, Camerún, Canada, Cabo Verde, Islas Caimán, Chad, Chile, China, Isla de Navidad, Colombia, Comodos, Congo, Costa Rica, Costa de Marfil, Croacia, Cuba, Chipre, República Checa, Dinamarca, Dominica, República Dominicana, Ecuador, Egipto, El Salvador, Guinea Ecuatorial, Eritrea, Estonia, Etiopía, Islas Faro, Fiji, Finlandia, Francia, Gabón, Gambia, Georgia, Alemania, Ghana, Grecia, Groenlandia, Granada, Guadalupe, Guam, Guatemala, Guinea, Guinea-Bisau, Guayana, Haiti, Honduras, Hong Kong, Hungria, Islandia, India, Indonesia, Iran, Irak, Irlanda, Italia, Jamaica, Japón, Jordania, Kazajistan, Kenia, Kiribati, Corea, Kuwait, Letonia, Líbano, Liberia, Liechtenstein, Lituania, Luxemburgo, Macao, Macedonia, Madagascar, Malawi, Malasia, Maldivas, Mali, Malta, Martinica, Mauritania, Méjico, Micronesia, Moldavia, Mónaco, Mongolia, Montenegro, Montserrat, Marruecos, Mozambique, Namibia, Nauru, Nepal, Holanda, Nueva Zelanda, Nicaragua, Niger, Nigeria, Noruega, Omán, Pakistan, Panamá, Papúa Nueva Guinea, Paraguay, Perú, Filipinas, Poland, Portugal, Puerto Rico, Rusia, Ruanda, Samoa, San Marino, Santo Tomé y Principe, Arabia Saudí, Senegal, Serbia, Seychelles, Sierra Leona, Singapur, Eslovaquia, Eslovenia, Somalia, España, Sri Lanka, Sudán, Suriname, Suecia, Suiza, Siria, Taiwan, Tajikistan, Tanzania, Tailandia, Timor-Leste, Togo, Tonga, Trinidad y Tobago, Tunez, Turquia, Uganda, Ucrania, Emiratos Árabes Unidos, Reino Unido, Estados Unidos de América, Uruguay, Uzbekistan, Vanuatu, Venezuela, Vietnam, Yemen, Zambia, Zimbabwe]
-      country_code: ['ES']
-      building_number: [' s/n.', ', #', ', ##', ' #', ' ##']
-      street_suffix: [Aldea, Apartamento, Arrabal, Arroyo, Avenida, Bajada, Barranco, Barrio, Bloque, Calle, Calleja, Camino, Carretera, Caserio, Colegio, Colonia, Conjunto, Cuesta, Chalet, Edificio, Entrada, Escalinata, Explanada, Extramuros, Extrarradio, Ferrocarril, Glorieta, Gran Subida, Grupo, Huerta, Jardines, Lado, Lugar, Manzana, Masía, Mercado, Monte, Muelle, Municipio, Parcela, Parque, Partida, Pasaje, Paseo, Plaza, Poblado, Polígono, Prolongación, Puente, Puerta, Quinta, Ramal, Rambla, Rampa, Riera, Rincón, Ronda, Rua, Salida, Sector, Sección, Senda, Solar, Subida, Terrenos, Torrente, Travesía, Urbanización, Vía, Vía Pública]
-      secondary_address: ['Esc. ###', 'Puerta ###']
-      # Though these are US-specific, they are here (in the default locale) for backwards compatibility
-      postcode: ['#####']
-      province: [Álava, Albacete, Alicante, Almería, Asturias, Ávila, Badajoz, Barcelona, Burgos, Cantabria, Castellón, Ciudad Real, Cuenca, Cáceres, Cádiz, Córdoba, Gerona, Granada, Guadalajara, Guipúzcoa, Huelva, Huesca, Islas Baleares, Jaén, La Coruña, La Rioja, Las Palmas, León, Lugo, lérida, Madrid, Murcia, Málaga, Navarra, Orense, Palencia, Pontevedra, Salamanca, Santa Cruz de Tenerife, Segovia, Sevilla, Soria, Tarragona, Teruel, Toledo, Valencia, Valladolid, Vizcaya, Zamora, Zaragoza]
-      state: [Andalucía, Aragón, Principado de Asturias, Baleares, Canarias, Cantabria, Castilla-La Mancha, Castilla y León, Cataluña, Comunidad Valenciana, Extremadura, Galicia, La Rioja, Comunidad de Madrid, Navarra, País Vasco, Región de Murcia]
-      state_abbr: [And, Ara, Ast, Bal, Can, Cbr, Man, Leo, Cat, Com, Ext, Gal, Rio, Mad, Nav, Vas, Mur]
-      time_zone: [Pacífico/Midway, Pacífico/Pago_Pago, Pacífico/Honolulu, America/Juneau, America/Los_Angeles, America/Tijuana, America/Denver, America/Phoenix, America/Chihuahua, America/Mazatlan, America/Chicago, America/Regina, America/Mexico_City, America/Mexico_City, America/Monterrey, America/Guatemala, America/New_York, America/Indiana/Indianapolis, America/Bogota, America/Lima, America/Lima, America/Halifax, America/Caracas, America/La_Paz, America/Santiago, America/St_Johns, America/Sao_Paulo, America/Argentina/Buenos_Aires, America/Guyana, America/Godthab, Atlantic/South_Georgia, Atlantic/Azores, Atlantic/Cape_Verde, Europa/Dublin, Europa/London, Europa/Lisbon, Europa/London, Africa/Casablanca, Africa/Monrovia, Etc/UTC, Europa/Belgrade, Europa/Bratislava, Europa/Budapest, Europa/Ljubljana, Europa/Prague, Europa/Sarajevo, Europa/Skopje, Europa/Warsaw, Europa/Zagreb, Europa/Brussels, Europa/Copenhagen, Europa/Madrid, Europa/Paris, Europa/Amsterdam, Europa/Berlin, Europa/Berlin, Europa/Rome, Europa/Stockholm, Europa/Vienna, Africa/Algiers, Europa/Bucharest, Africa/Cairo, Europa/Helsinki, Europa/Kiev, Europa/Riga, Europa/Sofia, Europa/Tallinn, Europa/Vilnius, Europa/Athens, Europa/Istanbul, Europa/Minsk, Asia/Jerusalen, Africa/Harare, Africa/Johannesburg, Europa/Moscú, Europa/Moscú, Europa/Moscú, Asia/Kuwait, Asia/Riyadh, Africa/Nairobi, Asia/Baghdad, Asia/Tehran, Asia/Muscat, Asia/Muscat, Asia/Baku, Asia/Tbilisi, Asia/Yerevan, Asia/Kabul, Asia/Yekaterinburg, Asia/Karachi, Asia/Karachi, Asia/Tashkent, Asia/Kolkata, Asia/Kolkata, Asia/Kolkata, Asia/Kolkata, Asia/Kathmandu, Asia/Dhaka, Asia/Dhaka, Asia/Colombo, Asia/Almaty, Asia/Novosibirsk, Asia/Rangoon, Asia/Bangkok, Asia/Bangkok, Asia/Jakarta, Asia/Krasnoyarsk, Asia/Shanghai, Asia/Chongqing, Asia/Hong_Kong, Asia/Urumqi, Asia/Kuala_Lumpur, Asia/Singapore, Asia/Taipei, Australia/Perth, Asia/Irkutsk, Asia/Ulaanbaatar, Asia/Seoul, Asia/Tokyo, Asia/Tokyo, Asia/Tokyo, Asia/Yakutsk, Australia/Darwin, Australia/Adelaide, Australia/Melbourne, Australia/Melbourne, Australia/Sydney, Australia/Brisbane, Australia/Hobart, Asia/Vladivostok, Pacífico/Guam, Pacífico/Port_Moresby, Asia/Magadan, Asia/Magadan, Pacífico/Noumea, Pacífico/Fiji, Asia/Kamchatka, Pacífico/Majuro, Pacífico/Auckland, Pacífico/Auckland, Pacífico/Tongatapu, Pacífico/Fakaofo, Pacífico/Apia]
-      city:
-        - "#{city_prefix}"
-      street_name:
-        - "#{street_suffix} #{Name.first_name}"
-        - "#{street_suffix} #{Name.first_name} #{Name.last_name}"
-      street_address:
-        - "#{street_name}#{building_number}"
-        - "#{street_name}#{building_number} #{secondary_address}"
-      default_country: [España]
+  button:
+    back: '🔙 Volver'
+  message:
+    no_active_raffle:
+      text: Por ahora no hay ninguna rifa
+      create_button: Crear rifa
+    not_allowed_action:
+      text: Aación no permitida
+  show_description:
+    multiple_raffle_text: |
+      💬 Título: %{name}
+      📅 Creada: %{date}
+      📕 Descripción: %{description}
+      🔢 Nº números: %{numbers_count}
+      ☝️ Max. números de personas: Sin límite
+      🏷 Reservados: %{reserved}/%{numbers_count}
+      ➡️ Método de pago: %{payment_info}
+      💲 Pagados: %{paid}/%{numbers_count}
+      💵 Precio número: %{price}
+      📦 Envio: TODO INCLUIDO
+      📷 Fotos: %{image_count}
 
-    company:
-      suffix: [S.L., e Hijos, S.A., Hermanos]
-      # Buzzword wordlist from http://www.1728.com/buzzword.htm
-      buzzwords:
-        - ["habilidad", "acceso", "adaptador", "algoritmo", "alianza", "analista", "aplicación", "enfoque", "arquitectura", "archivo", "inteligencia artificial", "array", "actitud", "medición", "gestión presupuestaria", "capacidad", "desafío", "circuito", "colaboración", "complejidad", "concepto", "conglomeración", "contingencia", "núcleo", "fidelidad", "base de datos", "data-warehouse", "definición", "emulación", "codificar", "encriptar", "extranet", "firmware", "flexibilidad", "focus group", "previsión", "base de trabajo", "función", "funcionalidad", "Interfaz Gráfica", "groupware", "Interfaz gráfico de usuario", "hardware", "Soporte", "jerarquía", "conjunto", "implementación", "infraestructura", "iniciativa", "instalación", "conjunto de instrucciones", "interfaz", "intranet", "base del conocimiento", "red de area local", "aprovechar", "matrices", "metodologías", "middleware", "migración", "modelo", "moderador", "monitorizar", "arquitectura abierta", "sistema abierto", "orquestar", "paradigma", "paralelismo", "política", "portal", "estructura de precios", "proceso de mejora", "producto", "productividad", "proyecto", "proyección", "protocolo", "línea segura", "software", "solución", "estandardización", "estrategia", "estructura", "éxito", "superestructura", "soporte", "sinergia", "mediante", "marco de tiempo", "caja de herramientas", "utilización", "website", "fuerza de trabajo"]
-        - ["24 horas", "24/7", "3rd generación", "4th generación", "5th generación", "6th generación", "analizada", "asimétrica", "asíncrona", "monitorizada por red", "bidireccional", "bifurcada", "generada por el cliente", "cliente servidor", "coherente", "cohesiva", "compuesto", "sensible al contexto", "basado en el contexto", "basado en contenido", "dedicada", "generado por la demanda", "didactica", "direccional", "discreta", "dinámica", "potenciada", "acompasada", "ejecutiva", "explícita", "tolerante a fallos", "innovadora", "amplio ábanico", "global", "heurística", "alto nivel", "holística", "homogénea", "hibrida", "incremental", "intangible", "interactiva", "intermedia", "local", "logística", "maximizada", "metódica", "misión crítica", "móbil", "modular", "motivadora", "multimedia", "multiestado", "multitarea", "nacional", "basado en necesidades", "neutral", "nueva generación", "no-volátil", "orientado a objetos", "óptima", "optimizada", "radical", "tiempo real", "recíproca", "regional", "escalable", "secundaria", "orientada a soluciones", "estable", "estatica", "sistemática", "sistémica", "tangible", "terciaria", "transicional", "uniforme", "valor añadido", "vía web", "defectos cero", "tolerancia cero"]
-        - ["Adaptativo", "Avanzado", "Asimilado", "Automatizado", "Equilibrado", "Centrado en el negocio", "Centralizado", "Clonado", "Compatible", "Configurable", "Multi grupo", "Multi plataforma", "Centrado en el usuario", "Configurable", "Descentralizado", "Digitalizado", "Distribuido", "Diverso", "Reducido", "Mejorado", "Para toda la empresa", "Ergonomico", "Exclusivo", "Expandido", "Extendido", "Cara a cara", "Enfocado", "Totalmente configurable", "Fundamental", "Orígenes", "Horizontal", "Implementado", "Innovador", "Integrado", "Intuitivo", "Inverso", "Gestionado", "Obligatorio", "Monitorizado", "Multi canal", "Multi lateral", "Multi capa", "En red", "Orientado a objetos", "Open-source", "Operativo", "Optimizado", "Opcional", "Organico", "Organizado", "Perseverando", "Persistente", "en fases", "Polarizado", "Pre-emptivo", "Proactivo", "Enfocado a benficios", "Profundo", "Programable", "Progresivo", "Public-key", "Enfocado en la calidad", "Reactivo", "Realineado", "Re-contextualizado", "Re-implementado", "Reducido", "Ingenieria inversa", "Robusto", "Fácil", "Seguro", "Auto proporciona", "Compartible", "Intercambiable", "Sincronizado", "Orientado a equipos", "Total", "Universal", "Mejorado", "Actualizable", "Centrado en el usuario", "Amigable", "Versatil", "Virtual", "Visionario"]
-      name:
-        - "#{Name.last_name} #{suffix}"
-        - "#{Name.last_name} y #{Name.last_name}"
-        - "#{Name.last_name} #{Name.last_name} #{suffix}"
-        - "#{Name.last_name}, #{Name.last_name} y #{Name.last_name} Asociados"
-      industry: ["Defensa", "Equipo de Cómputo", "Software", "Redes", "Internet", "Semiconductores", "Telecomunicaciones", "Despacho de Abogados", "Servicos Legales", "Consultoría en Administración", "Biotecnología", "Clínica", "Hospitales y Cuidado Médico", "Farmacéutica", "Veterinaria", "Dispositivos Médicos", "Cosméticos", "Moda", "Equipo Deportivo", "Tabaco", "Supermercados", "Elaboración de Comida", "Electrodomésticos", "Bienes", "Muebles", "Retail", "Entretenimiento", "Juegos y Apuestas", "Viajes y Turismo", "Hospitalidad", "Restaurantes", "Deportes", "Comida y Bebida", "Cine", "Broadcast Media", "Museos e Instituciones", "Bellas Artes", "Artes Escénicas", "Banca", "Seguros", "Servicios Financieros", "Bienes Raíces", "Banca de Inversión", "Manejo de Inversiones", "Contabilidad", "Construcción", "Materiales de Construcción", "Arquitectura", "Ingeniería Civil", "Aeroespacial", "Automotriz", "Química", "Maquinaria", "Minería y Metales", "Petróleo y Energía", "Construcción de Barcos", "Servicios", "Textiles", "Papel", "Ferrocarriles", "Agricultura", "Ganadería", "Lácteos", "Pesca", "Educación Basica", "Educación Media Superior", "Administración de Educación", "Investigación", "Militar", "Asamblea Legislativa", "Juzgado", "Relaciones Internacionales", "Gobierno", "Dirección General", "Policía", "Seguridad Pública", "Política Pública", "Marketing", "Periódicos", "Publicaciones", "Imprenta", "Tecnologías de Información", "Bibliotecas", "Medio Ambiente", "Paquetería y Mensajería", "Servicios Familiares", "Instituciones Religiosas", "Sociedad Civil", "Servicios del Consumidor", "Transportes", "Almacenamiento", "Líneas Aéreas", "Marítimo", "Investigación de Mercado", "Relaciones Públicas", "Diseño", "Sin Fines de Lucro", "Recaudación", "Edición", "Staffing y Reclutamiento", "Coaching", "VC", "Partidos Políticos", "Traducciones", "Juegos de Cómputo", "Planeación de Eventos", "Artes y Manualidades", "Manufactura Eléctrica/Electrónica", "Medios Online", "Nanotecnología", "Música", "Logística y Supply Chain", "Plásticos", "Seguridad de Cómputo y Redes", "Inalámbrico", "Outsourcing / Offshoring", "Bienestar y Salud", "Medicina Alternativa", "Producción de Medios", "Animación", "Bienes Raíces Comerciales", "Mercados Capitales", "Filantropía", "E-Learning", "Mayoreo", "Importaciones y Exportaciones", "Ingeniería Mecánica e Industrial", "Fotografía", "Recursos Humanos", "Equipo de Oficina", "Cuidado de la Salud Mental", "Diseño Gráfico", "Desarrollo y Comercio Exterior", "Vinos y Licores", "Joyería y Bienes de Lujo", "Renovables y Medio Ambiente", "Vidrios y Cerámicos", "Almacenamiento y Contenedores", "Automatización Industrial", "Relaciones Gubernamentales"]
-      profession: ["maestro", "actor", "músico", "filósofo", "escritor", "doctor", "contador", "agricultor", "arquitecto", "economista", "ingeniero", "intérprete", "abogado", "bibliotecario", "actuario", "recursos humanos", "bombero", "juez", "policía", "astrónomo", "biólogo", "químico", "físico", "programador", "desarrollador web", "diseñador"]
+      ⚙️ Estado de la rifa: %{status}
+    single_raffle_text: |
+      💬 Título: %{name}
+      📅 Creada: %{date}
+      📕 Descripción: %{description}
+      🔢 Nº números: %{numbers_count}
+      🏷 Reservados: %{reserved}/%{numbers_count}
+      💵 Precio número: GRATUITO
+      📦 Envio: TODO INCLUIDO
+      📷 Fotos: %{image_count}
 
-      university:
-            prefix: [El, Septentrional, Norte, Occidental, Oeste, Del Sur, Sur, Oriental, Oriente]
-            suffix: [Universidad, Instituto, Academia]
-            name:
-              - "#{Name.last_name} #{University.suffix}"
-              - "#{University.prefix} #{Name.last_name} #{University.suffix}"
-              - "#{University.prefix} #{Name.last_name}"
-              - "#{University.prefix} #{Address.state} #{University.suffix}"
-
-
-    internet:
-      free_email: [gmail.com, yahoo.com, hotmail.com]
-      domain_suffix: [com, es, info, com.es, org]
-
-    name:
-      male_first_name: [Adán, Agustín, Alberto, Alejandro, Alfonso, Alfredo, Andrés, Antonio, Armando, Arturo, Benito, Benjamín, Bernardo, Carlos, César, Claudio, Clemente, Cristian, Cristobal, Daniel, David, Diego, Eduardo, Emilio, Enrique, Ernesto, Esteban, Federico, Felipe, Fernando, Francisco, Gabriel, Gerardo, Germán, Gilberto, Gonzalo, Gregorio, Guillermo, Gustavo, Hernán, Homero, Horacio, Hugo, Ignacio, Jacobo, Jaime, Javier, Jerónimo, Jesús, Joaquín, Jorge, Jorge Luis, José, José Eduardo, José Emilio, José Luis, José María, Juan, Juan Carlos, Julio, Julio César, Lorenzo, Lucas, Luis, Luis Miguel, Manuel, Marco Antonio, Marcos, Mariano, Mario, Martín, Mateo, Miguel, Miguel Ángel, Nicolás, Octavio, Óscar, Pablo, Patricio, Pedro, Rafael, Ramiro, Ramón, Raúl, Ricardo, Roberto, Rodrigo, Rubén, Salvador, Samuel, Sancho, Santiago, Sergio, Teodoro, Timoteo, Tomás, Vicente, Víctor]
-      female_first_name: [Adela, Adriana, Alejandra, Alicia, Amalia, Ana, Ana Luisa, Ana María, Andrea, Anita, Ángela, Antonia, Ariadna, Barbara, Beatriz, Berta, Blanca, Caridad, Carla, Carlota, Carmen, Carolina, Catalina, Cecilia, Clara, Claudia, Concepción, Conchita, Cristina, Daniela, Débora, Diana, Dolores, Lola, Dorotea, Elena, Elisa, Eloisa, Elsa, Elvira, Emilia, Esperanza, Estela, Ester, Eva, Florencia, Francisca, Gabriela, Gloria, Graciela, Guadalupe, Guillermina, Inés, Irene, Isabel, Isabela, Josefina, Juana, Julia, Laura, Leonor, Leticia, Lilia, Lorena, Lourdes, Lucia, Luisa, Luz, Magdalena, Manuela, Marcela, Margarita, María, María del Carmen, María Cristina, María Elena, María Eugenia, María José, María Luisa, María Soledad, María Teresa, Mariana, Maricarmen, Marilu, Marisol, Marta, Mayte, Mercedes, Micaela, Mónica, Natalia, Norma, Olivia, Patricia, Pilar, Ramona, Raquel, Rebeca, Reina, Rocio, Rosa, Rosalia, Rosario, Sara, Silvia, Sofia, Soledad, Sonia, Susana, Teresa, Verónica, Victoria, Virginia, Yolanda]
-      first_name:
-        - "#{female_first_name}"
-        - "#{male_first_name}"
-      last_name: [ Abeyta, Abrego, Abreu, Acevedo, Acosta, Acuña, Adame, Adorno, Agosto, Aguayo, Águilar, Aguilera, Aguirre, Alanis, Alaniz, Alarcón, Alba, Alcala, Alcántar, Alcaraz, Alejandro, Alemán, Alfaro, Alicea, Almanza, Almaraz, Almonte, Alonso, Alonzo, Altamirano, Alva, Alvarado, Alvarez, Amador, Amaya, Anaya, Anguiano, Angulo, Aparicio, Apodaca, Aponte, Aragón, Araña, Aranda, Arce, Archuleta, Arellano, Arenas, Arevalo, Arguello, Arias, Armas, Armendáriz, Armenta, Armijo, Arredondo, Arreola, Arriaga, Arroyo, Arteaga, Atencio, Ávalos, Ávila, Avilés, Ayala, Baca, Badillo, Báez, Baeza, Bahena, Balderas, Ballesteros, Banda, Bañuelos, Barajas, Barela, Barragán, Barraza, Barrera, Barreto, Barrientos, Barrios, Batista, Becerra, Beltrán, Benavides, Benavídez, Benítez, Bermúdez, Bernal, Berríos, Bétancourt, Blanco, Bonilla, Borrego, Botello, Bravo, Briones, Briseño, Brito, Bueno, Burgos, Bustamante, Bustos, Caballero, Cabán, Cabrera, Cadena, Caldera, Calderón, Calvillo, Camacho, Camarillo, Campos, Canales, Candelaria, Cano, Cantú, Caraballo, Carbajal, Cardenas, Cardona, Carmona, Carranza, Carrasco, Carrasquillo, Carreón, Carrera, Carrero, Carrillo, Carrion, Carvajal, Casanova, Casares, Casárez, Casas, Casillas, Castañeda, Castellanos, Castillo, Castro, Cavazos, Cazares, Ceballos, Cedillo, Ceja, Centeno, Cepeda, Cerda, Cervantes, Cervántez, Chacón, Chapa, Chavarría, Chávez, Cintrón, Cisneros, Collado, Collazo, Colón, Colunga, Concepción, Contreras, Cordero, Córdova, Cornejo, Corona, Coronado, Corral, Corrales, Correa, Cortés, Cortez, Cotto, Covarrubias, Crespo, Cruz, Cuellar, Curiel, Dávila, de Anda, de Jesús, Delacrúz, Delafuente, Delagarza, Delao, Delapaz, Delarosa, Delatorre, Deleón, Delgadillo, Delgado, Delrío, Delvalle, Díaz, Domínguez, Domínquez, Duarte, Dueñas, Duran, Echevarría, Elizondo, Enríquez, Escalante, Escamilla, Escobar, Escobedo, Esparza, Espinal, Espino, Espinosa, Espinoza, Esquibel, Esquivel, Estévez, Estrada, Fajardo, Farías, Feliciano, Fernández, Ferrer, Fierro, Figueroa, Flores, Flórez, Fonseca, Franco, Frías, Fuentes, Gaitán, Galarza, Galindo, Gallardo, Gallegos, Galván, Gálvez, Gamboa, Gamez, Gaona, Garay, García, Garibay, Garica, Garrido, Garza, Gastélum, Gaytán, Gil, Girón, Godínez, Godoy, Gómez, Gonzales, González, Gollum, Gracia, Granado, Granados, Griego, Grijalva, Guajardo, Guardado, Guerra, Guerrero, Guevara, Guillen, Gurule, Gutiérrez, Guzmán, Haro, Henríquez, Heredia, Hernádez, Hernandes, Hernández, Herrera, Hidalgo, Hinojosa, Holguín, Huerta, Hurtado, Ibarra, Iglesias, Irizarry, Jaime, Jaimes, Jáquez, Jaramillo, Jasso, Jiménez, Jimínez, Juárez, Jurado, Laboy, Lara, Laureano, Leal, Lebrón, Ledesma, Leiva,Lemus, León, Lerma, Leyva, Limón, Linares, Lira, Llamas, Loera, Lomeli, Longoria, López, Lovato, Loya, Lozada, Lozano, Lucero, Lucio, Luevano, Lugo, Luna, Macías, Madera, Madrid, Madrigal, Maestas, Magaña, Malave, Maldonado, Manzanares, Mares, Marín, Márquez, Marrero, Marroquín, Martínez, Mascareñas, Mata, Mateo, Matías, Matos, Maya, Mayorga, Medina, Medrano, Mejía, Meléndez, Melgar, Mena, Menchaca, Méndez, Mendoza, Menéndez, Meraz, Mercado, Merino, Mesa, Meza, Miramontes, Miranda, Mireles, Mojica, Molina, Mondragón, Monroy, Montalvo, Montañez, Montaño, Montemayor, Montenegro, Montero, Montes, Montez, Montoya, Mora, Morales, Moreno, Mota, Moya, Munguía, Muñiz, Muñoz, Murillo, Muro, Nájera, Naranjo, Narváez, Nava, Navarrete, Navarro, Nazario, Negrete, Negrón, Nevárez, Nieto, Nieves, Niño, Noriega, Núñez, Ocampo, Ocasio, Ochoa, Ojeda, Olivares, Olivárez, Olivas, Olivera, Olivo, Olmos, Olvera, Ontiveros, Oquendo, Ordóñez, Orellana, Ornelas, Orosco, Orozco, Orta, Ortega, Ortiz, Osorio, Otero, Ozuna, Pabón, Pacheco, Padilla, Padrón, Páez, Pagan, Palacios, Palomino, Palomo, Pantoja, Paredes, Parra, Partida, Patiño, Paz, Pedraza, Pedroza, Pelayo, Peña, Perales, Peralta, Perea, Peres, Pérez, Pichardo, Piña, Pineda, Pizarro, Polanco, Ponce, Porras, Portillo, Posada, Prado, Preciado, Prieto, Puente, Puga, Pulido, Quesada, Quezada, Quiñones, Quiñónez, Quintana, Quintanilla, Quintero, Quiroz, Rael, Ramírez, Ramón, Ramos, Rangel, Rascón, Raya, Razo, Regalado, Rendón, Rentería, Reséndez, Reyes, Reyna, Reynoso, Rico, Rincón, Riojas, Ríos, Rivas, Rivera, Rivero, Robledo, Robles, Rocha, Rodarte, Rodrígez, Rodríguez, Rodríquez, Rojas, Rojo, Roldán, Rolón, Romero, Romo, Roque, Rosado, Rosales, Rosario, Rosas, Roybal, Rubio, Ruelas, Ruiz, Saavedra, Sáenz, Saiz, Salas, Salazar, Salcedo, Salcido, Saldaña, Saldivar, Salgado, Salinas, Samaniego, Sanabria, Sanches, Sánchez, Sandoval, Santacruz, Santana, Santiago, Santillán, Sarabia, Sauceda, Saucedo, Sedillo, Segovia, Segura, Sepúlveda, Serna, Serrano, Serrato, Sevilla, Sierra, Sisneros, Solano, Solís, Soliz, Solorio, Solorzano, Soria, Sosa, Sotelo, Soto, Suárez, Tafoya, Tamayo, Tamez, Tapia, Tejada, Tejeda, Téllez, Tello, Terán, Terrazas, Tijerina, Tirado, Toledo, Toro, Torres, Tórrez, Tovar, Trejo, Treviño, Trujillo, Ulibarri, Ulloa, Urbina, Ureña, Urías, Uribe, Urrutia, Vaca, Valadez, Valdés, Valdez, Valdivia, Valencia, Valentín, Valenzuela, Valladares, Valle, Vallejo, Valles, Valverde, Vanegas, Varela, Vargas, Vásquez, Vázquez, Vega, Vela, Velasco, Velásquez, Velázquez, Vélez, Véliz, Venegas, Vera, Verdugo, Verduzco, Vergara, Viera, Vigil, Villa, Villagómez, Villalobos, Villalpando, Villanueva, Villareal, Villarreal, Villaseñor, Villegas, Yáñez, Ybarra, Zambrano, Zamora, Zamudio, Zapata, Zaragoza, Zarate, Zavala, Zayas, Zelaya, Zepeda, Zúñiga]
-      prefix: [Sr., Sra., Sta.]
-      suffix: [Jr., Sr., I, II, III, IV, V, MD, DDS, PhD, DVM]
-      title:
-        descriptor: [Jefe, Senior, Directo, Corporativo, Dinánmico, Futuro, Producto, Nacional, Regional, Distrito, Central, Global, Cliente, Inversor, International, Heredado, Adelante, Interno, Humano, Gerente, Director]
-        level: [Soluciones, Programa, Marca, Seguridada, Investigación, Marketing, Normas, Implementación, Integración, Funcionalidad, Respuesta, Paradigma, Tácticas, Identidad, Mercados, Grupo, División, Aplicaciones, Optimización, Operaciones, Infraestructura, Intranet, Comunicaciones, Web, Calidad, Seguro, Mobilidad, Cuentas, Datos, Creativo, Configuración, Contabilidad, Interacciones, Factores, Usabilidad, Métricas]
-        job: [Supervisor, Asociado, Ejecutivo, Relacciones, Oficial, Gerente, Ingeniero, Especialista, Director, Coordinador, Administrador, Arquitecto, Analista, Diseñador, Planificador, Técnico, Funcionario, Desarrollador, Productor, Consultor, Asistente, Facilitador, Agente, Representante, Estratega]
-      name:
-        - "#{prefix} #{first_name} #{last_name} #{last_name}"
-        - "#{first_name} #{last_name} #{last_name}"
-        - "#{first_name} #{last_name} #{last_name}"
-        - "#{first_name} #{last_name} #{last_name}"
-        - "#{first_name} #{last_name} #{last_name}"
-      name_with_middle:
-        - "#{prefix} #{first_name} #{last_name} #{last_name}"
-        - "#{first_name} #{last_name} #{last_name} #{suffix}"
-        - "#{first_name} #{last_name} #{last_name}"
-        - "#{first_name} #{last_name} #{last_name}"
-        - "#{first_name} #{last_name} #{last_name}"
-        - "#{first_name} #{last_name} #{last_name}"
-
-    phone_number:
-      formats: ['9##-###-###', '9##.###.###', '9## ### ###', '9########']
-    cell_phone:
-      formats: ['6##-###-###', '6##.###.###', '6## ### ###', '6########']
-    music:
-      instruments: ['Guitarra Eléctrica', 'Guitarra Acústica', 'Flauta', 'Trompeta', 'Clarinete', 'Violonchelo', 'Arpa', 'Xilofón', 'Armónica', 'Acordión', 'Organo', 'Piano', 'Ukelele', 'Saxofón', 'Bateria', 'Violín', 'Bajo']
-    subscription:
-      plans: ["Prueba gratuita", "Basico", "Starter", "Essential", "Estudiante", Bronze", "Standard", "Silver", "Gold", "Platinum", "Profesional", "Business", "Diamond", "Premium"]
-      statuses: ["Activo", "Parado", "Bloqueado", "Pendiente"]
-      payment_methods: ["Tarjeta de credito", "Tarjeta de débito", "Paypal", "Efectivo", "Transferencia de dinero", "Bitcoins", "Cheque", "Apple Pay", "Google Pay", "WeChat Pay", "Alipay", "Visa Checkout"]
-      subscription_terms: ["Diaria", "Semanal", "Mensual", "Anual", "Bienal", "Trienal", "Quinquenal", "De por vida"]
-      payment_terms: ["Pago por adelantado", "Mensual", "Anual", "Suscripción completa"]
-
-    vehicle:
-      license_plate: '####[B-DF-HJ-NPR-TV-Z]{3}'
-      license_plate_by_state:
-        A: 'A####[A-PS-Z]{1,2}'
-        AB: 'AB####[A-PS-Z]{1,2}'
-        AL: 'AL####[A-PS-Z]{1,2}'
-        AV: 'AV####[A-PS-Z]{1,2}'
-        B: 'B####[A-PS-Z]{1,2}'
-        BA: 'BA####[A-PS-Z]{1,2}'
-        BI: 'BI####[A-PS-Z]{1,2}'
-        BU: 'BU####[A-PS-Z]{1,2}'
-        C: 'C####[A-PS-Z]{1,2}'
-        CA: 'CA####[A-PS-Z]{1,2}'
-        CC: 'CC####[A-PS-Z]{1,2}'
-        CS: 'CS####[A-PS-Z]{1,2}'
-        CE: 'CE####[A-PS-Z]{1,2}'
-        CO: 'CO####[A-PS-Z]{1,2}'
-        CR: 'CR####[A-PS-Z]{1,2}'
-        CU: 'CU####[A-PS-Z]{1,2}'
-        GC: 'GC####[A-PS-Z]{1,2}'
-        GI: 'GI####[A-PS-Z]{1,2}'
-        GR: 'GR####[A-PS-Z]{1,2}'
-        GU: 'GU####[A-PS-Z]{1,2}'
-        H: 'H####[A-PS-Z]{1,2}'
-        HU: 'HU####[A-PS-Z]{1,2}'
-        IB: 'IB####[A-PS-Z]{1,2}'
-        J: 'J####[A-PS-Z]{1,2}'
-        L: 'L####[A-PS-Z]{1,2}'
-        LE: 'LE####[A-PS-Z]{1,2}'
-        LO: 'LO####[A-PS-Z]{1,2}'
-        LU: 'LU####[A-PS-Z]{1,2}'
-        M: 'M####[A-PS-Z]{1,2}'
-        MA: 'MA####[A-PS-Z]{1,2}'
-        ML: 'ML####[A-PS-Z]{1,2}'
-        MU: 'MU####[A-PS-Z]{1,2}'
-        NA: 'NA####[A-PS-Z]{1,2}'
-        O: 'O####[A-PS-Z]{1,2}'
-        OU: 'OU####[A-PS-Z]{1,2}'
-        P: 'P####[A-PS-Z]{1,2}'
-        PO: 'PO####[A-PS-Z]{1,2}'
-        S: 'S####[A-PS-Z]{1,2}'
-        SA: 'SA####[A-PS-Z]{1,2}'
-        SE: 'SE####[A-PS-Z]{1,2}'
-        SG: 'SG####[A-PS-Z]{1,2}'
-        SO: 'SO####[A-PS-Z]{1,2}'
-        SS: 'SS####[A-PS-Z]{1,2}'
-        T: 'T####[A-PS-Z]{1,2}'
-        TE: 'TE####[A-PS-Z]{1,2}'
-        TF: 'TF####[A-PS-Z]{1,2}'
-        TO: 'TO####[A-PS-Z]{1,2}'
-        V: 'V####[A-PS-Z]{1,2}'
-        VA: 'VA####[A-PS-Z]{1,2}'
-        VI: 'VI####[A-PS-Z]{1,2}'
-        Z: 'Z####[A-PS-Z]{1,2}'
-        ZA: 'ZA####[A-PS-Z]{1,2}'
+      ⚙️ Estado de la rifa: %{status}
+    button:
+      create_raffle: Crear rifa
+      admin_raffle: Admin. números
+      verify_payments: Verificar pagos
+      change_raffle_status: Cambiar estado rifa
+      edit_raffle: Modificar rifa
+      summarize_raffle: Resumen de la rifa
+      show_raffle: 🔍 Ver Rifa
+      available_numbers:  📋 Ver números
+      show_raffle_photos: 📸 Ver fotos
+      show_payment_funnel: Pagar %{total_price} (%{numbers_count}x%{number_price})
+      show_reserved_numbers: 👎 Liberar números
+  admin_delete:
+    text: Rifa eliminada
+  admin_show_status:
+    text: Selecciona el estado de la rifa
+  admin_update_status:
+    text: Estado de la rifa actualizado a %{raffle_status}
+  admin_create:
+    ask_raffle_name: ¿Cuál es el nombre de la rifa
+    ask_raffle_description: Proporciona una descripción de la rifa
+    ask_raffle_first_number: ¿Cuál es el primer número de la rifa?
+    ask_raffle_last_number: ¿Cuál es el último número de la rifa?
+    ask_raffle_price: ¿Cuál es el precio del boleto de la rifa? Especificalo en céntimos ej. 3,75€ -> 375
+    ask_raffle_payment_info: Por favor, proporciona la información de pago
+    ask_raffle_category: ¿Cuál es la categoría de la rifa "single" o "multiple"?
+    ask_raffle_images: Envía las imágenes para la rifa de una en una y escribe "%{escape_word}" para finalizar
+    received_image: Imagen recibida. Puedes enviar más o escribe "%{escape_word}" para completar
+    error_receiving_image: Por favora, envía una imagen o escribe "%{escape_word}" si has terminado.
+    success_raffle_created: ¡La rifa '%{raffle_name}' ha sido creada con éxito!
+  admin_edit:
+    ask_raffle_name: ¿Cuál es el nombre de la rifa? ("%{escape_word}" para mantener el valor %{raffle_name})
+    ask_raffle_description: Por favor, proporciona una descripción de la rifa ("%{escape_word}" para mantener el valor %{raffle_description})
+    ask_raffle_price: ¿Cual es el precio del boleto de la rifa? ("%{escape_word}" para mantener el valor %{raffle_price})
+    ask_raffle_payment_info: Por favor, proporciona la información de pago ("%{escape_word}" para mantener el valor %{raffle_payment_info})
+    success_raffle_edited: ¡La rifa '%{raffle_name}' ha sido modificada con éxito!
+  send_images:
+    no_images: No hay imágenes para esta rifa
+  show_payment_funnel:
+    send_image_payment: Envia una imagen del pago para que podamos verificarlo
+    already_upladed_image: Ya has subido una imagen del pago. Envia una imagen nueva para actualizarla
+    not_allowed_pay: No puedes pagar ningún número
+  upload_payment_image:
+    text: Imagen subida correctamente
+  admin_show_payment_image:
+    text: Números de %{telegram_first_name}
+  admin_show_numbers:
+    text: |
+      Número seleccionado: %{number}
+      Estado: %{color_status} %{status}
+      Nombre usuario: %{telegram_first_name}
+      Username: @%{telegram_username}
+  admin_show_users_numbers:
+    text: Usuarios con números
+  show_grid:
+    choose_number: Escoge tu número
+    not_available_number: Número no disponible
+    not_reserved_number: No hay números reservados
+  take_number:
+    take_number: El número %{value} se ha reservado para ti
+    not_allowed_take_number: El número %{value} ya no se puede reservar
+    already_reserved_number: Ya tienes un número reservado en esta rifa
+  release_number:
+    not_allow_release_number: No puedes liberar el número %{value}
+    release_number: Has liberado el número %{value}
+  update_status_number:
+    number_not_found: Número no encontrado
+    number_updated: Estado del número %{value} actualizado
+  payment_notifier:
+    text: La rifa %{raffle_name} se ha completado y comienza el periodo de pago. Veo que tienes %{numbers_count} números sin pagar. ¿Quieres pagarlos ahora?
+    pay_number: 💲 Pagar %{price} por %{numbers_count} números
+  raffle:
+    open: ABIERTA
+    waiting_payment: ESPERANDO PAGOS
+    closed: FINALIZADA
+  number:
+    available: 
+      color: '⚪️'
+      status: 'Disponible'
+    reserved: 
+      color: '🟡'
+      status: 'Reservado'
+    pending_approval: 
+      color: '🔵'
+      status: 'Pendiente de aprobación'
+    paid:
+      color: '🟢'
+      status: 'Pagado'
+  

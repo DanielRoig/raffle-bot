@@ -44,8 +44,8 @@ Rails.application.configure do
     address:              'smtp.gmail.com',
     port:                 587,
     domain:               'example.com',
-    user_name:            ENV['RAILS_API_BOILERPLATE_EMAIL'],
-    password:             ENV['RAILS_API_BOILERPLATE_EMAIL_PASSWORD'],
+    user_name:            ENV['RAFFLE_EMAIL'],
+    password:             ENV['RAFFLE_EMAIL_PASSWORD'],
     authentication:       'plain',
     enable_starttls_auto: true,
     open_timeout:         5,
@@ -90,4 +90,5 @@ Rails.application.configure do
 
   # Uncomment if you wish to allow Action Cable access from any origin.
   # config.action_cable.disable_request_forgery_protection = true
+  config.telegram_updates_controller.session_store = :memory_store
 end

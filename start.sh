@@ -10,7 +10,10 @@ bundle check || bundle install --jobs 20 --retry 5
 bundle exec rake db:migrate || echo "Can't run migrations"
 
 # Remove pre-existing puma/passenger server.pid
-rm -f /tmp/pids/server.pid
+rm -f ./tmp/pids/server.pid
+
+chmod +x bin/rake
 
 # run passed commands
-bundle exec rails s -p 3000 -b 0.0.0.0
+rake telegram:bot:poller
+

@@ -1,0 +1,123 @@
+en:
+  button:
+    back: '🔙 Back'
+  message:
+    no_active_raffle:
+      text: There are no active raffles at the moment
+      create_button: Create raffle
+    not_allowed_action:
+      text: Action not allowed
+  show_description:
+    multiple_raffle_text: |
+      💬 Title: %{name}
+      📅 Created: %{date}
+      📕 Description: %{description}
+      🔢 Number of tickets: %{numbers_count}
+      ☝️ Max tickets per person: No limit
+      🏷 Reserved: %{reserved}/%{numbers_count}
+      ➡️ Payment method: %{payment_info}
+      💲 Paid: %{paid}/%{numbers_count}
+      💵 Ticket price: %{price}
+      📦 Shipping: INCLUDED
+      📷 Photos: %{image_count}
+
+      ⚙️ Raffle status: %{status}
+    single_raffle_text: |
+      💬 Title: %{name}
+      📅 Created: %{date}
+      📕 Description: %{description}
+      🔢 Number of tickets: %{numbers_count}
+      🏷 Reserved: %{reserved}/%{numbers_count}
+      💵 Ticket price: FREE
+      📦 Shipping: INCLUDED
+      📷 Photos: %{image_count}
+
+      ⚙️ Raffle status: %{status}
+    button:
+      create_raffle: Create raffle
+      admin_raffle: Manage tickets
+      verify_payments: Verify payments
+      change_raffle_status: Change raffle status
+      edit_raffle: Edit raffle
+      summarize_raffle: Raffle summary
+      show_raffle: 🔍 View Raffle
+      available_numbers:  📋 View tickets
+      show_raffle_photos: 📸 View photos
+      show_payment_funnel: Pay %{total_price} (%{numbers_count}x%{number_price})
+      show_reserved_numbers: 👎 Release tickets
+  admin_delete:
+    text: Raffle deleted
+  admin_show_status:
+    text: Select the raffle status
+  admin_update_status:
+    text: Raffle status updated to %{raffle_status}
+  admin_create:
+    ask_raffle_name: What is the name of the raffle?
+    ask_raffle_description: Provide a description of the raffle
+    ask_raffle_first_number: What is the first ticket number of the raffle?
+    ask_raffle_last_number: What is the last ticket number of the raffle?
+    ask_raffle_price: What is the ticket price for the raffle? Specify in cents, e.g. 3.75€ -> 375
+    ask_raffle_payment_info: Please provide the payment information
+    ask_raffle_category: What is the raffle category "single" or "multiple"?
+    ask_raffle_images: Send the raffle images one by one, and type "%{escape_word}" to finish
+    received_image: Image received. You can send more or type "%{escape_word}" to finish
+    error_receiving_image: Please send an image or type "%{escape_word}" if you are finished.
+    success_raffle_created: The raffle '%{raffle_name}' has been successfully created!
+  admin_edit:
+    ask_raffle_name: What is the name of the raffle? ("%{escape_word}" to keep the value %{raffle_name})
+    ask_raffle_description: Please provide a raffle description ("%{escape_word}" to keep the value %{raffle_description})
+    ask_raffle_price: What is the ticket price for the raffle? ("%{escape_word}" to keep the value %{raffle_price})
+    ask_raffle_payment_info: Please provide the payment information ("%{escape_word}" to keep the value %{raffle_payment_info})
+    success_raffle_edited: The raffle '%{raffle_name}' has been successfully edited!
+  send_images:
+    no_images: There are no images for this raffle
+  show_payment_funnel:
+    send_image_payment: Send a payment image so we can verify it
+    already_upladed_image: You have already uploaded a payment image. Send a new image to update it
+    not_allowed_pay: You cannot pay for any tickets
+  upload_payment_image:
+    text: Image uploaded successfully
+  admin_show_payment_image:
+    text: Tickets of %{telegram_first_name}
+  admin_show_numbers:
+    text: |
+      Selected ticket: %{number}
+      Status: %{color_status} %{status}
+      User name: %{telegram_first_name}
+      Username: @%{telegram_username}
+  admin_show_users_numbers:
+    text: Users with tickets
+  show_grid:
+    choose_number: Choose your ticket number
+    not_available_number: Ticket number not available
+    not_reserved_number: No tickets reserved
+  take_number:
+    take_number: Ticket number %{value} has been reserved for you
+    not_allowed_take_number: Ticket number %{value} is no longer available for reservation
+    already_reserved_number: You have already reserved a ticket in this raffle
+  release_number:
+    not_allow_release_number: You cannot release ticket number %{value}
+    release_number: You have released ticket number %{value}
+  update_status_number:
+    number_not_found: Ticket number not found
+    number_updated: Ticket number %{value} status updated
+  payment_notifier:
+    text: The raffle %{raffle_name} is complete and the payment period has begun. I see you have %{numbers_count} unpaid tickets. Would you like to pay for them now?
+    pay_number: 💲 Pay %{price} for %{numbers_count} tickets
+  raffle:
+    open: OPEN
+    waiting_payment: WAITING PAYMENTS
+    closed: CLOSED
+  number:
+    available: 
+      color: '⚪️'
+      status: 'Available'
+    reserved: 
+      color: '🟡'
+      status: 'Reserved'
+    pending_approval: 
+      color: '🔵'
+      status: 'Pending approval'
+    paid:
+      color: '🟢'
+      status: 'Paid'

@@ -1,8 +1,3 @@
 Rails.application.routes.draw do
-  if Rails.env.development?
-    require 'sidekiq/web'
-    mount Sidekiq::Web => "/sidekiq"
-  end
-  
-  mount API::Root => '/'
+  telegram_webhook RaffleController
 end

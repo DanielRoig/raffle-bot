@@ -1,21 +1,22 @@
-FROM ruby:3.1.2
+FROM ruby:3.1.6
 
 RUN apt-get -y update && apt-get -y upgrade
 
-ENV RAILS_API_BOILERPLATE /opt/RAILS_API_BOILERPLATE
+ENV RAFFLE /opt/RAFFLE
 
-RUN mkdir -p $RAILS_API_BOILERPLATE
-WORKDIR $RAILS_API_BOILERPLATE
+RUN mkdir -p $RAFFLE
+WORKDIR $RAFFLE
 
-RUN gem install bundler:2.3.14
-ADD Gemfile Gemfile.lock $RAILS_API_BOILERPLATE/
+RUN gem install bundler:2.5.18
+ADD Gemfile Gemfile.lock $RAFFLE/
 RUN bundle install
+RUN gem install foreman
 
-ADD . $RAILS_API_BOILERPLATE/
+ADD . $RAFFLE/
 
 ADD start.sh /start
 RUN chmod u+x /start
 
-CMD [ "/start" ]
+CMD [ "/start", "foreman" ]
 
 #CMD rails s

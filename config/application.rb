@@ -8,9 +8,10 @@ Bundler.require(*Rails.groups)
 
 Dotenv::Railtie.load
 
-module RailsApiBoilerplate
+module RaffleBot
   class Application < Rails::Application
     # Initialize configuration defaults for originally generated Rails version.
+    config.i18n.default_locale = ENV.fetch('I18N_DEFAULT_LOCALE', :en)
     config.load_defaults 6.1 
     config.eager_load_paths << Rails.root.join('lib')
 
