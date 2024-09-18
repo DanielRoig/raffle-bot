@@ -1,9 +1,18 @@
 # 🤖 Telegram Bot with Ruby on Rails
-This project is a Telegram bot built using Ruby on Rails and the telegram-bot gem. Follow the instructions below to set up and run the bot.
+This Telegram bot is designed for organizing product raffles. Users can select a number for a raffle, upload a payment confirmation photo, and track their participation.
 
 <img src="./screenshots/screenshot-1.png" width="300">
 <img src="./screenshots/screenshot-3.png" width="300">
 <img src="./screenshots/screenshot-2.png" width="300">
+
+## Features:
+- User number selection: Participants choose a number for the raffle.
+- Payment confirmation upload: Users upload a photo of their payment as confirmation for the selected number.
+- Admin panel:
+    - Manage raffle numbers.
+    - Track users' payment confirmations.
+    - Change the status of raffle numbers (e.g., available, reserved, paid).
+This system streamlines the process of running raffles, making it easy for admins to monitor entries and for users to participate smoothly.
 
 ## Requirements
 - Docker
