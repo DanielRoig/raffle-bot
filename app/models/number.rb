@@ -7,7 +7,7 @@ class Number < ApplicationRecord
   scope :available, -> { where(user: nil) }
 
   validates :value, presence: true, uniqueness: { scope: :raffle_id }
-  validate :validate_number_selection, if: -> { user.present? }
+  validate :validate_number_selection, if: -> { user.present? && saved_change_to_user_id? }
 
   before_update :clear_user_if_available
 
@@ -22,8 +22,6 @@ class Number < ApplicationRecord
   end
 
   def validate_number_selection
-    if raffle.single? && raffle.numbers.exists?(user_id: user_id)
-      errors.add(:user, 'solo puede seleccionar un número en esta rifa')
-    end
+    return throw(:abort) if raffle.single? && raffle.numbers.exists?(user_id: user_id)
   end
 end
